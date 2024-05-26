@@ -16,11 +16,17 @@
 
     <ItemGroup>
       <Content Remove="Build\src\ClearPluginAssemblies.csproj\**" />
-      <Content Include="src\Build\ClearPluginAssemblies.csproj" />
+      <Content Include="src\Build\ClearPluginAssemblies.proj" />
+      <Content Include="src\Build\src\ClearPluginAssemblies\ClearPluginAssemblies.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Build\src\ClearPluginAssemblies.csproj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="src\Nop.Data\" />
+      <Folder Include="src\Nop.Services\" />
     </ItemGroup>
 
 </Project>
